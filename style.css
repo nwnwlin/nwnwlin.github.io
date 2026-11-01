@@ -1,0 +1,167 @@
+
+/* General settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #263445;
+    background-color: #f4f7fb;
+}
+
+/* Navigation */
+header {
+    background-color: #12345a;
+    padding: 18px 8%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #80c4ff;
+}
+
+/* Homepage introduction */
+.hero {
+    background: linear-gradient(135deg, #12345a, #2675b9);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.intro {
+    letter-spacing: 3px;
+    color: #b9ddff;
+}
+
+.hero h1 {
+    font-size: 44px;
+    margin: 15px 0;
+}
+
+.hero h2 {
+    font-size: 21px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: 15px auto;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: white;
+    color: #12345a;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Content sections */
+.section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 65px 25px;
+}
+
+.section h2 {
+    color: #12345a;
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+/* Skills */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+}
+
+.skill-card {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid #dce5ef;
+    font-weight: bold;
+}
+
+/* Projects */
+.project-card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border-left: 5px solid #2675b9;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+.project-card h3 {
+    color: #12345a;
+    margin-bottom: 10px;
+}
+
+.technology {
+    color: #2675b9;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.status {
+    display: inline-block;
+    margin-top: 10px;
+    color: #666;
+    font-size: 13px;
+}
+
+/* Footer */
+footer {
+    background-color: #12345a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+}
